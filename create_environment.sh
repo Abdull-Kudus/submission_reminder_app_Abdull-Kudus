@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Prompt for name 
+# Prompt for name: 
 read -rp "Enter your name: " USER_NAME
 ROOT_DIR="submission_reminder_${USER_NAME// /-}" # Replace spaces with dashes
 
@@ -70,8 +70,8 @@ Anissa, Shell Navigation, not submitted
 Ridaa, Shell Navigation, submitted
 Isaac, Shell Navigation, not submitted
 Guido, Shell Navigation, submitted
-Mariam, Shell Navigation, not submitted
-Nana, Shell Navigation, submitted
+Maria, Shell Navigation, not submitted
+Joseph, Shell Navigation, submitted
 EOT
 
 # Create the startup script
@@ -91,6 +91,6 @@ chmod +x "${ROOT_DIR}/startup.sh"
 # Make all .sh files executable
 find "${ROOT_DIR}" -type f -name "*.sh" -exec chmod +x {} \;
 
-# Done 
+# COMPLETED...Done
 echo "Environment setup complete in: $ROOT_DIR"
 echo "To test: cd $ROOT_DIR && ./startup.sh"
